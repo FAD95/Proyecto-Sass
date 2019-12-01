@@ -1,0 +1,27 @@
+.ubicacion--perfil{
+	margin: 30px auto 0 auto;
+	padding: 20px 0 20px 50px;
+	width: 40%;
+	@include caja;
+	i{
+		color: $color-variacion;
+		font-size:40px;
+		float: left;
+		display: block;
+		padding-right: 10px ;
+		margin-top: 5px;
+	}
+	h2{
+		text-transform: uppercase;
+		font-weight: 600;
+		@include titulos($fuente2);
+	}
+	h3{
+		text-transform: uppercase;
+		@include titulos($fuente2);
+	
+	}
+}
+
+
+

@@ -1,0 +1,46 @@
+.perfil {
+	width: 50%;
+	padding-top: 50px;
+	background-color: $color-secundario;
+	&__avatar {
+		display: block;
+		margin: 0 auto;
+		border-radius: 50em;
+		box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.40);
+	}
+	&__nombre {
+		text-align: center;		
+		color: $color-claro;
+		@include titulos($fuente2);
+	}
+	&__titulo {		
+		text-align: center;
+		font-weight: 700;
+		color: opacidad($color-claro, .70);
+		@include titulos($fuente2);
+	}
+	&__boton {
+		display: flex;
+		width: 100px;
+		height: 40px;
+		margin: 15px auto;
+		border-radius: 20px;
+		text-decoration: none;
+		justify-content: center;
+		align-items: center;
+		border: 2px solid opacidad($color-claro, .50);
+		@include titulos($fuente2);
+		color: $color-claro;
+		background-color: opacidad($color-primario,.20);
+	}
+	&__minibio {
+		width: 50%;
+		margin: 20px auto;
+		h2{
+			@extend .perfil__nombre;
+		}
+		h3{
+			@extend .perfil__titulo;
+		}
+	}
+}
