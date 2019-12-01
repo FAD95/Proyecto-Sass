@@ -1,6 +1,7 @@
 .articulos{
     width: 50%;
-    padding: 50px 0 0 50px;
+    padding: 100px 0 0 50px;
+    @include right__background($variacion);
 }
 
 .articulo{
@@ -16,10 +17,12 @@
         font-size: 20px;
         @include titulos($fuente2);
         margin-bottom: 50px;
+        @include right__titulos($variacion);
     }
     &__descripcion{
         font-size: 18px;
         margin-bottom: 30px;
         padding-right: 100px;
+        @include right__parrafos($variacion);
     }
 }

@@ -29,7 +29,7 @@ main {
 .perfil {
   width: 50%;
   padding-top: 50px;
-  background-color: #8841DA; }
+  background-color: #FFF; }
   .perfil__avatar {
     display: block;
     margin: 0 auto;
@@ -38,13 +38,14 @@ main {
     box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.4); }
   .perfil__nombre, .perfil__minibio h2 {
     text-align: center;
-    color: #FFF;
+    color: #8841DA;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase; }
   .perfil__titulo, .perfil__minibio h3 {
     text-align: center;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    color: #3f579a;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase; }
   .perfil__boton {
@@ -66,7 +67,7 @@ main {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: #FFF;
-    background-color: rgba(51, 51, 51, 0.2); }
+    background-color: rgba(51, 51, 51, 0.8); }
   .perfil__minibio {
     width: 50%;
     margin: 20px auto; }
@@ -161,7 +162,8 @@ main {
 
 .articulos {
   width: 50%;
-  padding: 50px 0 0 50px; }
+  padding: 100px 0 0 50px;
+  background-color: #333; }
 
 .articulo {
   margin-bottom: 75px;
@@ -176,8 +178,10 @@ main {
     font-size: 20px;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    color: #FFF; }
   .articulo__descripcion {
     font-size: 18px;
     margin-bottom: 30px;
-    padding-right: 100px; }
+    padding-right: 100px;
+    color: #FFF; }

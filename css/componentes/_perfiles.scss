@@ -1,7 +1,7 @@
 .perfil {
 	width: 50%;
 	padding-top: 50px;
-	background-color: $color-secundario;
+	@include left__background($variacion);
 	&__avatar {
 		display: block;
 		margin: 0 auto;
@@ -10,13 +10,14 @@
 	}
 	&__nombre {
 		text-align: center;		
-		color: $color-claro;
+		@include left__titulos($variacion);
 		@include titulos($fuente2);
 	}
 	&__titulo {		
 		text-align: center;
 		font-weight: 700;
-		color: opacidad($color-claro, .70);
+		font-size: 16px;
+		@include left__subtitulos($variacion);
 		@include titulos($fuente2);
 	}
 	&__boton {
@@ -31,7 +32,7 @@
 		border: 2px solid opacidad($color-claro, .50);
 		@include titulos($fuente2);
 		color: $color-claro;
-		background-color: opacidad($color-primario,.20);
+		@include left__boton-background($variacion);
 	}
 	&__minibio {
 		width: 50%;

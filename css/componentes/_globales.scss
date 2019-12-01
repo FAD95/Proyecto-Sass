@@ -4,7 +4,11 @@ $color-primario: #333;
 $color-secundario: #8841DA;
 $color-claro: #FFF;
 $color-variacion: #3f579a;
-$modo-oscuro: "true";
+$variacion: 1;
+
+@function opacidad($color,$intensidad){
+    @return rgba($color,$intensidad);
+}
 
 @mixin caja{
     border-radius: 20px;
@@ -22,9 +26,62 @@ $modo-oscuro: "true";
     }
 }
 
-@function opacidad($color,$intensidad){
-    @return rgba($color,$intensidad);
+@mixin left__background($valor){
+    @if $valor==0{
+        background-color: $color-secundario;
+    }@else{
+        background-color: $color-claro;
+    }
 }
+@mixin left__titulos($valor) {
+    @if $valor==0{
+        color: $color-claro;
+    }@else{
+        color: $color-secundario;
+    }
+}
+
+@mixin left__subtitulos($valor){
+    @if $valor==0{
+        color: opacidad($color-claro, .70);
+    }@else{
+        color: $color-variacion;
+    }
+}
+
+@mixin left__boton-background($valor){
+    @if $valor==0{
+        background-color: opacidad($color-primario,.20);
+    }@else{
+        background-color: opacidad($color-primario,.80);
+    }
+}
+
+@mixin right__background($valor){
+    @if $valor==0{
+        background-color: $color-claro;
+    }@else{
+        background-color: $color-primario;
+    }
+}
+
+@mixin right__titulos($valor){
+    @if $valor==0{
+        color: $color-primario;
+    }@else{
+        color: $color-claro;
+    }
+}
+
+@mixin right__parrafos($valor) {
+    @if $valor==0{
+        color: $color-primario;
+    }@else{
+        color: $color-claro;
+    }
+    
+}
+
 
 @each $header, $size in (h1:30px, h2: 25px, h3: 18px){
     #{$header}{
